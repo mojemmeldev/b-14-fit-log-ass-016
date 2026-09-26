@@ -12,11 +12,11 @@ const NavButton = () => {
                
     return (
         <div>
-            <Link href="/src/app/workouts" className="btn">
+            <Link href="/workouts" className="btn">
             <button>plan </button>
             <h2>{libraryPlan.length}</h2>
             </Link>
-        <Link href="/src/app/workouts" className="btn">
+        <Link href="/workouts" className="btn">
             <button>Saved </button>
             <h2>{librarySaved.length}</h2>
             </Link>

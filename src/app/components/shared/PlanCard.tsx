@@ -1,10 +1,15 @@
 
 
+import { TLibrary } from '@/app/DataTypes/Type';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-const PlanCard = ({ data }) => {
+type PlanCardProps = {
+  data: TLibrary
+};
+
+const PlanCard = ({ data }: PlanCardProps) => {
     return (
        <div className="flex w-full flex-col gap-4 rounded-xl border border-[#292D35] bg-[#17191F] p-4 text-white md:flex-row md:items-center md:justify-between">
 
