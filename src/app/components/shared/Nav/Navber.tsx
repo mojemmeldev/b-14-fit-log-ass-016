@@ -1,17 +1,14 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
 import logo from '@/assets/logo.png'
-import NavPlanButton from './NavButton';
 import NavButton from './NavButton';
+
+import NavLinks from './NavLinks';
+
 
 const Navber = () => {
 
-    const link=<>
-    <li><Link href="/workouts">Workouts</Link></li>
-    <li><Link href="/myplan">My Plan</Link></li>
-            
-    </>
+ 
 
 
     return (
@@ -24,7 +21,7 @@ const Navber = () => {
       <ul
         tabIndex={-1}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        {link}
+        <NavLinks/>
       </ul>
     </div>
     <Link href="/workouts">
@@ -35,8 +32,8 @@ const Navber = () => {
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-     {link} 
      
+     <NavLinks/>
     </ul>
   </div>
   <div className="navbar-end">
